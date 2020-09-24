@@ -7,7 +7,8 @@ const isPangram = (str) => {
   return str.match(ABC_REGEX).length === 26;
 };
 
-getElement("check-btn").addEventListener("click", () => {
+getElement("form").addEventListener("submit", (event) => {
+  event.preventDefault();
   const str = getElement("input").value;
   const resultElement = getElement("result");
   resultElement.innerHTML = isPangram(str);
