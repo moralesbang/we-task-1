@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.click-jacker {
+  background-color: lemonchiffon;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  height: 35px;
+  width: 120px;
+  top: 85px;
+  left: 5px;
+}
+
+.visible-button {
+  opacity: 0.9;
+}
